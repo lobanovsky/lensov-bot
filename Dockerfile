@@ -11,6 +11,6 @@ WORKDIR /app
 
 COPY --from=builder /app/build/libs/lensov-bot-all.jar app.jar
 
-EXPOSE 8084
+EXPOSE 8085
 
 CMD ["java", "-jar", "app.jar"]
