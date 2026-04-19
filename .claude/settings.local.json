@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs -0 ls -lh)",
+      "Bash(./gradlew shadowJar --no-daemon)",
+      "Bash(gradle shadowJar --no-daemon)",
+      "Bash(cp -r /Users/evgeny/Projects/telega/fomenki-bot/gradle /Users/evgeny/Projects/telega/lensov-bot/)",
+      "Bash(cp /Users/evgeny/Projects/telega/fomenki-bot/gradlew /Users/evgeny/Projects/telega/lensov-bot/)",
+      "Bash(cp /Users/evgeny/Projects/telega/fomenki-bot/gradlew.bat /Users/evgeny/Projects/telega/lensov-bot/)",
+      "Bash(chmod +x /Users/evgeny/Projects/telega/lensov-bot/gradlew)"
+    ]
+  }
+}

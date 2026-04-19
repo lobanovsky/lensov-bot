@@ -1,0 +1,18 @@
+services:
+  lensov-bot:
+    image: lobanovsky/lensov-bot:${TAG}
+    container_name: lensov-bot
+    restart: always
+    environment:
+      TZ: Europe/Moscow
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      BACKEND_URL: ${BACKEND_URL}
+      LENSOV_API_KEY: ${LENSOV_API_KEY}
+      WEBHOOK_SECRET: ${WEBHOOK_SECRET}
+      WEBHOOK_PORT: ${WEBHOOK_PORT:-8085}
+    ports:
+      - "${WEBHOOK_PORT:-8085}:${WEBHOOK_PORT:-8085}"
+    volumes:
+      - ./logs:/app/logs
+    env_file:
+      - .env
