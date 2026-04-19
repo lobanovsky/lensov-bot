@@ -146,7 +146,7 @@ private const val INFO_TEXT = """Сервис «Билеты в продаже»
 Поддержка: e.lobanovsky@ya.ru / @e_lobanovsky
 Создано в «Бюро Лобановского» — https://lobanovsky.ru"""
 
-private const val PAYMENT_TEXT = """Стоимость: 950₽ за 6 месяцев за все боты
+private const val PAYMENT_TEXT = """Стоимость: 1000₽ за 6 месяцев за все боты
 
 Перевод по номеру телефона: +7-926-793-63-63
 Банк: Т-Банк или Сбер
